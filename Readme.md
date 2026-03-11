@@ -5,7 +5,9 @@ Doesn't it bother you when emails from random domain names appear in your inbox?
 
 This tool can help security specialists, and regular users get some background information about a certain domain or IP address quickly, and without a hassle.
 
-* Current version is 0.1.
+**Disclaimer**: The information provided by this tool relies on publicly available information through WHOIS databases, and public registry information. Therefore, we provide no guarantee nor we hold the responsibility of the accuracy and availability of the information obtained using the tool.
+
+* Current version is 0.1.1.
 
 ## Installation
 Download the repository using:
@@ -30,9 +32,7 @@ The script can be used to obtain information about domains using the ``-d domain
 
 If you're inspecting an IP address, you can use ``-i ip-address`` argument to obtain IP information such as autonomous system number (ASN), country code (based on IP), and IP block owner. Using the ``-d`` argument will get you the domain and IP address information.
 
-If you're looking for IP geolocation data, you can signup to [ipinfo.io](https://ipinfo.io) for free to obtain an API access key. Once you have that key, you can add ``-a access-token`` to the script, and it would fetch additional information for you from ipinfo.io, such as hostname, country and city, and location coordinates.
-
-**Disclaimer**: This is by no means and endorsement for ipinfo.io. There are many other similar services who provide this information for free, with certain limitations.
+If you're looking for IP geolocation data, you can signup to [ipinfo.io](https://ipinfo.io) for free to obtain an API access key. Once you have that key, you can add ``-a access-token`` to the script, and it would fetch additional information for you from ipinfo.io, such as hostname, country and city, and location coordinates. This is by no means and endorsement for ipinfo.io. There are many other similar services who provide this information for free, with certain limitations.
 
 ## Contributors:
 [Mohammed M. Alani](https://www.mohammedalani.com) ([Mo-Alani](https://github.com/Mo-Alani/))

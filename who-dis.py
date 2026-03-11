@@ -115,11 +115,18 @@ if (args.access_token):
     print("\nRetrieving more information from ipinfo.io ..")
     access_token = args.access_token
     handler = ipinfo.getHandler(access_token)
-    details = handler.getDetails(ip_address)
+    try:
+        details = handler.getDetails(ip_address)
+    except:
+        print("Could not retrieve the information from ipinfo.io")
+        sys.exit()
     print(f"Country:{tcolors.GREEN} {details.country_name}{tcolors.ENDC}")
     print(f"City:{tcolors.GREEN} {details.city}{tcolors.ENDC}")
     print(f"Location:{tcolors.GREEN} {details.loc}{tcolors.ENDC}")
-    print(f"Hostname:{tcolors.GREEN} {details.hostname}{tcolors.ENDC}")
+    try:
+        print(f"Hostname:{tcolors.GREEN} {details.hostname}{tcolors.ENDC}")
+    except:
+        print("Hostname information is not available")
 
 print("\n That's all for now.")
 
