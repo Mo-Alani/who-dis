@@ -63,7 +63,7 @@ if (not args.domain) and (not args.ip):
 # If the user includes a domain name AND an IP address, an error message will be shown
 if (args.domain) and (args.ip):
     parser.print_help()
-    printf("You can choose either a domain name or an IP. NOT BOTH!!!")
+    print("You can choose either a domain name or an IP. NOT BOTH!!!")
     sys.exit()
 
 # Printing the preamble
